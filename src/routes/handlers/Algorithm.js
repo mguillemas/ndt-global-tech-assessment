@@ -14,7 +14,7 @@ module.exports = class Algorithm {
     }
     constructor(algorithm) {
         // this.#validate(algorithm
-        console.log('construct',JSON.stringify(algorithm))
+        // console.log('construct',JSON.stringify(algorithm))
         this.#algorithm = algorithm
     }
 

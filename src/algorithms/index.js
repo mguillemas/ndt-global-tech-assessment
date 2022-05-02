@@ -1,9 +1,12 @@
+const NumberValidator = require("../helpers/NumberValidator")
 const Concat = require("./Concat")
+const SaveDouble = require("./SaveDouble")
 const Substraction = require("./Substraction")
 const Sum = require("./Sum")
 
 module.exports = {
-    'sum': (algorithm) => new Sum(algorithm),
-    'substraction': (algorithm) => new Substraction(algorithm),
-    'concat': (algorithm) => new Concat(algorithm)
+    'sum': (inputs) => new Sum(inputs),
+    'substraction': (inputs) => new Substraction(inputs),
+    'concat': (inputs) => new Concat(inputs),
+    'saveDouble': (inputs) => new SaveDouble(inputs)
 }

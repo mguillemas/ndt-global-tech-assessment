@@ -12,6 +12,12 @@ module.exports =  class Sum {
         return total
     }
 
+    validate() {
+        if(this.#values.find(value => typeof value !== number)) {
+            throw Error('Not valid type on workflow, expected doubles but found: ' + value)
+        }
+    }
+
     getType() {
         return this.#type
     }
